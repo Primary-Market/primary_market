@@ -1,0 +1,33 @@
+{
+    "name": "cmarket",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@gitlab.com:primary-market/cmarket.git",
+    "license": "MIT",
+    "scripts": {
+        "deploy:test:tbsc": "hardhat run --network tbsc ./scripts/deploy-test.js",
+        "deploy:test:tiblast": "hardhat run --network tiblast ./scripts/deploy-test.js",
+        "deploy:test": "hardhat run ./scripts/deploy-test.js",
+        "dump:abi": "hardhat run ./scripts/dump-abi.js",
+        "test": "hardhat test",
+        "compile": "hardhat compile"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+        "@nomicfoundation/hardhat-ethers": "^3.0.0",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@nomicfoundation/hardhat-verify": "^2.0.0",
+        "@typechain/ethers-v6": "^0.5.0",
+        "@typechain/hardhat": "^9.0.0",
+        "chai": "^4.2.0",
+        "ethers": "^6.4.0",
+        "hardhat": "^2.19.2",
+        "hardhat-gas-reporter": "^1.0.8",
+        "solidity-coverage": "^0.8.0",
+        "typechain": "^8.3.0"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.0.0"
+    }
+}
